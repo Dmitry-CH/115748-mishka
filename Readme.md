@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Чеканов](https://up.htmlacademy.ru/adaptive/7/user/115748).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Кравченко`.
 
 ---
 
