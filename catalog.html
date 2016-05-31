@@ -7,90 +7,93 @@
 
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="" width="" height="" alt="Mishka">
-        </a>
+      <div class="page-header__top">
+        <div class="logo">
+          <a href="index.html">
+            <img src="" width="" height="" alt="Mishka">
+          </a>
+        </div>
+
+        <button class="page-header__toggle" type="button">Открыть меню</button>
       </div>
 
       <nav class="main-nav  main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
+
+      <div class="intro">
+        <h1 class="intro__title">Каталог товаров</h1>
+      </div>
     </header>
 
-    <main>
-      <div class="page-title">
-        <h1 class="page-title__title">Вязание на заказ</h1>
-      </div>
-
-      <div class="catalog-item">
-        <div class="catalog-item__picture">
-          <img src="" width="" height="" alt="">
-        </div>
-
-        <div class="catalog-item__wrap-info">
-          <div class="catalog-item__descript">
-            <h3>Зайчик-попрыгайчик</h3>
+    <main class="page-catalog">
+      <section class="catalog">
+        <article class="catalog-item">
+          <div class="catalog-item__picture">
+            <a href="#">
+              <img src="" width="" height="" alt="">
+            </a>
+          </div>
+          <div class="catalog-item__top">
+            <a href="#">Зайчик-попрыгайчик</a>
             <p>Рост 30 см, вес 200 г</p>
           </div>
-          <div class="catalog-item__price">
-            <p class="js-price">1 200 руб.</p>
+          <div class="catalog-item__bottom">
+            <span class="js-catalog-price">1 200 руб.</span>
+            <img src="" width="" height="" alt="">
           </div>
-        </div>
-      </div>
+        </article>
 
-      <div class="catalog-item">
-        <div class="catalog-item__picture">
-          <img src="" width="" height="" alt="">
-        </div>
-
-        <div class="catalog-item__wrap-info">
-          <div class="catalog-item__descript">
-            <h3>Корзинка для белья</h3>
+        <article class="catalog-item">
+          <div class="catalog-item__picture">
+            <a href="#">
+              <img src="" width="" height="" alt="">
+            </a>
+          </div>
+          <div class="catalog-item__top">
+            <a href="#">Корзинка для белья</a>
             <p>Диаметр 15 см, высота 10 см</p>
           </div>
-          <div class="catalog-item__price">
-            <p class="js-price">690 руб.</p>
+          <div class="catalog-item__bottom">
+            <span class="js-catalog-price">690 руб.</span>
+            <img src="" width="" height="" alt="">
           </div>
-        </div>
-      </div>
+        </article>
 
-      <div class="catalog-item">
-        <div class="catalog-item__picture">
-          <img src="" width="" height="" alt="">
-        </div>
-
-        <div class="catalog-item__wrap-info">
-          <div class="catalog-item__descript">
-            <h3>Большая корзинка для игрушек</h3>
+        <article class="catalog-item">
+          <div class="catalog-item__picture">
+            <a href="#">
+              <img src="" width="" height="" alt="">
+            </a>
+          </div>
+          <div class="catalog-item__top">
+            <a href="#">Большая корзинка для игрушек</a>
             <p>Диаметр 30 см, высота 30 см</p>
           </div>
-          <div class="catalog-item__price">
-            <p class="js-price">1 500 руб.</p>
+          <div class="catalog-item__bottom">
+            <span class="js-catalog-price">1 500 руб.</span>
+            <img src="" width="" height="" alt="">
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <div class="promo-info">
-        <div class="promo-info__title">
-          <h3>Процесс производства</h3>
+      <section class="making">
+        <h3 class="making__title">Процесс производства</h3>
+        <div class="making__video">
+          <img src="" width="" height="" alt="">
         </div>
-        <div class="promo-info__video">
-          <video src="" poster="" preload="auto"></video>
-        </div>
-        <div class="promo-info__descript">
-          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное
-             видео о том, как появляются наши товары.</p>
-        </div>
+        <p class="making__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное
+          видео о том, как появляются наши товары.
+        </p>
 
-        <a class="btn" href="#">Сделать заказ</a>
-      </div>
+        <a class="making__btn  btn" href="#">Сделать заказ</a>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -100,9 +103,9 @@
         <a class="social-link__item  social-link__item--tw" href="#">Твиттер</a>
       </div>
 
-      <div class="page-footer__copyright">
+      <div class="copyright">
         Разработано
-        <a class="page-footer__copyright-link" href="#" title="HTML Academy">HTML Academy</a>
+        <a class="copyright__link" href="#" title="HTML Academy">HTML Academy</a>
       </div>
     </footer>
   </body>

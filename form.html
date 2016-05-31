@@ -7,138 +7,138 @@
 
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="" width="" height="" alt="Mishka">
-        </a>
+      <div class="page-header__top">
+        <div class="logo">
+          <a href="index.html">
+            <img src="" width="" height="" alt="Mishka">
+          </a>
+        </div>
+
+        <button class="page-header__toggle" type="button">Открыть меню</button>
       </div>
 
       <nav class="main-nav  main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
+
+      <div class="intro">
+        <h1 class="intro__title">Вязание на заказ</h1>
+      </div>
     </header>
 
     <main>
-      <div class="page-title">
-        <h1 class="page-title__title">Вязание на заказ</h1>
-        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
-           форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
-      </div>
+      <p class="intro-text">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+        форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
 
-      <form action="." method="post" name="knitting">
-        <div class="group-type">
-          <div class="group-title">
-            <p class="group-title__category">Тип</p>
-            <hr>
+      <form class="main-form" action="." method="post" name="main-form">
+        <fieldset class="main-form__block">
+          <legend class="main-form__title">Тип</legend>
+
+          <div class="main-form__group">
+            <div class="main-form__field">
+              <input class="main-form__input-radio" id="acces" type="radio" name="type" checked>
+              <label class="main-form__label-radio" for="acces">Аксессуар для интерьера</label>
+            </div>
+            <div class="main-form__field">
+              <input class="main-form__input-radio" id="toy" type="radio" name="type">
+              <label class="main-form__label-radio" for="toy">Детская игрушка</label>
+            </div>
           </div>
+        </fieldset>
 
-          <label class="group-type__wrap">
-            <input type="radio" name="type" checked>
-            <span class="group-type__radio"></span>
-            Аксессуар для интерьера
-          </label>
-          <label class="group-type__wrap">
-            <input type="radio" name="type">
-            <span class="group-type__radio"></span>
-            Детская игрушка
-          </label>
-        </div>
+        <fieldset class="main-form__block">
+          <legend class="main-form__title">Цвет</legend>
 
-        <div class="group-color">
-          <div class="group-title">
-            <p class="group-title__category">Цвет</p>
-            <hr>
+          <div class="main-form__group">
+            <div class="main-form__field">
+              <input class="main-form__input-checkbox" id="white" type="checkbox" name="white">
+              <label class="main-form__label-checkbox" for="white">Белый</label>
+            </div>
+            <div class="main-form__field">
+              <input class="main-form__input-checkbox" id="grey" type="checkbox" name="grey">
+              <label class="main-form__label-checkbox" for="grey">Серый</label>
+            </div>
+            <div class="main-form__field">
+              <input class="main-form__input-checkbox" id="tiffani" type="checkbox" name="tiffani">
+              <label class="main-form__label-checkbox" for="tiffani">«Тиффани»</label>
+            </div>
+            <div class="main-form__field">
+              <input class="main-form__input-checkbox" id="black" type="checkbox" name="black">
+              <label class="main-form__label-checkbox" for="black">Черный</label>
+            </div>
+            <div class="main-form__field">
+              <input class="main-form__input-checkbox" id="pink" type="checkbox" name="pink">
+              <label class="main-form__label-checkbox" for="pink">Розовый</label>
+            </div>
+            <div class="main-form__field">
+              <input class="main-form__input-checkbox" id="orange" type="checkbox" name="orange">
+              <label class="main-form__label-checkbox" for="orange">Оранжевый</label>
+            </div>
           </div>
+        </fieldset>
 
-          <label class="group-color__wrap">
-            <input type="checkbox" name="white">
-            <span class="group-color__checkbox"></span>
-            Белый
-          </label>
-          <label class="group-color__wrap">
-            <input type="checkbox" name="grey">
-            <span class="group-color__checkbox"></span>
-            Серый
-          </label>
-          <label class="group-color__wrap">
-            <input type="checkbox" name="tiffani">
-            <span class="group-color__checkbox"></span>
-            «Тиффани»
-          </label>
-          <label class="group-color__wrap">
-            <input type="checkbox" name="black">
-            <span class="group-color__checkbox"></span>
-            Черный
-          </label>
-          <label class="group-color__wrap">
-            <input type="checkbox" name="pink">
-            <span class="group-color__checkbox"></span>
-            Розовый
-          </label>
-          <label class="group-color__wrap">
-            <input type="checkbox" name="orange">
-            <span class="group-color__checkbox"></span>
-            Оранжевый
-          </label>
-        </div>
+        <fieldset class="main-form__block">
+          <legend class="main-form__title">ФИО</legend>
 
-        <div class="group-family">
-          <div class="group-title">
-            <p class="group-title__category">ФИО</p>
-            <hr>
+          <div class="main-form__group">
+            <div class="main-form__field">
+              <label class="main-form__input-text" for="surname">Фамилия:</label>
+              <input class="main-form__label-text" id="surname" type="text"
+                     name="surname" placeholder="Укажите фамилию">
+            </div>
+            <div class="main-form__field">
+              <label class="main-form__input-text" for="name">Имя:</label>
+              <input class="main-form__label-text" id="name" type="text"
+                     name="name" placeholder="Введите ваше имя">
+            </div>
+            <div class="main-form__field">
+              <label class="main-form__input-text" for="patronymic">Отчество:</label>
+              <input class="main-form__label-text" id="patronymic" type="text"
+                     name="patronymic" placeholder="Отчество, если желаете">
+            </div>
           </div>
+        </fieldset>
 
-          <label class="" for="surname">Фамилия:</label>
-          <input id="surname" type="text"
-                 name="surname" placeholder="Укажите фамилию">
+        <fieldset class="main-form__block">
+          <legend class="main-form__title">Тел</legend>
 
-          <label class="" for="name">Имя:</label>
-          <input id="name" type="text"
-                 name="name" placeholder="Введите ваше имя">
-
-          <label class="" for="patronymic">Отчество:</label>
-          <input id="patronymic" type="text"
-                 name="patronymic" placeholder="Отчество, если желаете">
-        </div>
-
-        <div class="group-phone">
-          <div class="group-title">
-            <p class="group-title__category">Тел</p>
-            <hr>
+          <div class="main-form__group">
+            <div class="main-form__field">
+              <input class="main-form__input-tel" type="tel" name="tel"
+                     placeholder="+7 ХХХ ХХ ХХ">
+            </div>
           </div>
+        </fieldset>
 
-          <input id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ">
-          <label for="tel"></label>
-        </div>
+        <fieldset class="main-form__block">
+          <legend class="main-form__title">E-mail</legend>
 
-        <div class="group-email">
-          <div class="group-title">
-            <p class="group-title__category">E-mail</p>
-            <hr>
+          <div class="main-form__group">
+            <div class="main-form__field">
+              <input class="main-form__input-email" type="email" name="email"
+                     placeholder="Ваш e-mail">
+            </div>
           </div>
+        </fieldset>
 
-          <input id="email" type="email" name="email" placeholder="Ваш e-mail">
-          <label for="email"></label>
-        </div>
+        <fieldset class="main-form__block">
+          <legend class="main-form__title">Доп</legend>
 
-        <div class="group-other">
-          <div class="group-title">
-            <p class="group-title__category">Доп</p>
-            <hr>
+          <div class="main-form__group">
+            <textarea name="wishes" rows="8" cols="40"
+                      placeholder="Опишите все ваши пожелания к заказу">
+            </textarea>
           </div>
+        </fieldset>
 
-          <textarea name="wishes" rows="8" cols="40"
-                    placeholder="Опишите все ваши пожелания к заказу">
-          </textarea>
-        </div>
-
-        <a class="btn" href="#">Отправить заказ</a>
+        <button class="main-form__btn  btn" type="submit">Отправить заказ</button>
       </form>
     </main>
 
@@ -149,9 +149,9 @@
         <a class="social-link__item  social-link__item--tw" href="#">Твиттер</a>
       </div>
 
-      <div class="page-footer__copyright">
+      <div class="copyright">
         Разработано
-        <a class="page-footer__copyright-link" href="#" title="HTML Academy">HTML Academy</a>
+        <a class="copyright__link" href="#" title="HTML Academy">HTML Academy</a>
       </div>
     </footer>
   </body>
