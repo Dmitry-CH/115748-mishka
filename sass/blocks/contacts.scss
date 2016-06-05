@@ -1,0 +1,10 @@
+.contacts {
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+  font-family: $font-basic-family;
+}
+
+.contacts__subtitle {
+  @include subtitle;
+}

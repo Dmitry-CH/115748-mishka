@@ -1,0 +1,32 @@
+.catalog-item {
+  margin-top: 30px;
+  font-family: $font-basic-family;
+  background-color:	#00BFFF;
+}
+
+.catalog-item__top {
+
+  a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #444444;
+  }
+}
+
+.catalog-item__bottom {
+
+  span {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,18 @@
+.main-nav {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: $font-basic-family;
+  background-color: #F7BE81;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: 0;
+}
+
+.main-nav__link {
+  color: $font-basic-color;
+  text-decoration: none;
+}
