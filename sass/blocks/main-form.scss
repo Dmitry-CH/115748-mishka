@@ -1,0 +1,15 @@
+.main-form__title {
+  font-size: $font-second-size;
+  line-height: $line-second-height;
+  color: $font-accent-color;
+  font-weight: $font-accent-weight;
+  text-transform: uppercase;
+}
+
+.main-form__label-text,
+.main-form__label-radio,
+.main-form__label-checkbox {
+  font-size: $font-second-size;
+  line-height: 18px;
+  font-weight: $font-accent-weight;
+}

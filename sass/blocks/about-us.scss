@@ -1,0 +1,10 @@
+.about-us {
+  font-size: $font-second-size;
+  line-height: 18px;
+  font-weight: $font-accent-weight;
+  background-color: #7401DF;
+}
+
+.about-us__subtitle {
+  @include subtitle;
+}

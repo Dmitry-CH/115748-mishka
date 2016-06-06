@@ -1,0 +1,21 @@
+.offer {
+  color: $font-second-color;
+  background-color: #FE2E2E;
+}
+
+.offer__subtitle {
+  @include subtitle;
+}
+
+.offer__caption {
+  font-size: $font-second-size;
+  line-height: $line-second-height;
+  color: $font-accent-color;
+  font-weight: $font-accent-weight;
+  text-transform: uppercase;
+}
+
+.offer__price {
+  font-size: $font-second-size;
+  font-weight: $font-accent-weight;
+}

@@ -1,0 +1,17 @@
+.main-nav {
+  font-size: $font-second-size;
+  line-height: $line-basic-height;
+  font-weight:$font-accent-weight;
+  background-color: #F7BE81;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: 0;
+}
+
+.main-nav__link {
+  color: $font-basic-color;
+  text-decoration: none;
+}

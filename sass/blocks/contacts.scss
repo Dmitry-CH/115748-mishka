@@ -1,0 +1,8 @@
+.contacts {
+  line-height: $line-accent-height;
+  color: $font-second-color;
+}
+
+.contacts__subtitle {
+  @include subtitle;
+}

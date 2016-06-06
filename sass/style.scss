@@ -1,0 +1,32 @@
+@import
+  'variables',
+  'mixins';
+
+@import
+  'global/normalize',
+  'global/typography',
+  'global/basic';
+
+@import
+  'blocks/about-us',
+  'blocks/btn',
+  'blocks/catalog',
+  'blocks/catalog-item',
+  'blocks/category',
+  'blocks/contacts',
+  'blocks/copyright',
+  'blocks/intro',
+  'blocks/intro-text',
+  'blocks/logo',
+  'blocks/main-nav',
+  'blocks/main-form',
+  'blocks/making',
+  'blocks/offer',
+  'blocks/page-catalog',
+  'blocks/page-footer',
+  'blocks/page-form',
+  'blocks/page-header',
+  'blocks/page-main',
+  'blocks/reviews',
+  'blocks/reviews-btn',
+  'blocks/social-link';

@@ -1,0 +1,26 @@
+.catalog-item {
+  margin-top: 30px;
+  background-color:	#00BFFF;
+}
+
+.catalog-item__top {
+
+  a {
+    font-size: $font-second-size;
+    color: $font-basic-color;
+    font-weight: $font-accent-weight;
+    text-decoration: none;
+  }
+
+  p {
+    line-height: $line-accent-height;
+    color: $font-second-color;
+  }
+}
+
+.catalog-item__bottom {
+
+  span {
+    font-weight: $font-accent-weight;
+  }
+}

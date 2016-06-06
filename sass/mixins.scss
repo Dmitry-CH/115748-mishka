@@ -1,0 +1,6 @@
+@mixin subtitle {
+  font-size: $font-accent-size;
+  line-height: $line-accent-height;
+  color: $font-basic-color;
+  font-weight: $font-accent-weight;
+}
