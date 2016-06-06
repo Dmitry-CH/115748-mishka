@@ -1,16 +1,11 @@
 .making {
-  font-family: $font-basic-family;
   background-color: #90EE90;
 
   h3 {
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
+    font-size: $font-second-size;
   }
 
   p {
-    font-size: 14px;
-    line-height: 24px;
-    color: #444444;
+    color: $font-second-color;
   }
 }

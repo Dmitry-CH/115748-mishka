@@ -1,7 +1,5 @@
 .reviews {
-  font-size: 14px;
-  line-height: 30px;
-  font-family: $font-basic-family;
+  line-height: $line-accent-height;
 }
 
 .reviews__subtitle {
@@ -13,5 +11,5 @@
 }
 
 .reviews__author-name {
-  line-height: 24px;
+  line-height: $line-basic-height;
 }

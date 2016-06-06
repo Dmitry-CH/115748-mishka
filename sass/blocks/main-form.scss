@@ -1,20 +1,15 @@
-.main-form {
-  font-family: $font-basic-family;
-}
-
 .main-form__title {
-  font-size: 16px;
-  line-height: 16px;
-  color: #63d1bb;
-  font-weight: bold;
+  font-size: $font-second-size;
+  line-height: $line-second-height;
+  color: $font-accent-color;
+  font-weight: $font-accent-weight;
   text-transform: uppercase;
 }
 
 .main-form__label-text,
 .main-form__label-radio,
 .main-form__label-checkbox {
-  font-size: 16px;
+  font-size: $font-second-size;
   line-height: 18px;
-  color: #000000;
-  font-weight: bold;
+  font-weight: $font-accent-weight;
 }

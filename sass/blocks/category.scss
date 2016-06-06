@@ -1,16 +1,24 @@
 .category {
   font-size: 18px;
-  line-height: 24px;
   color: #ffffff;
-  font-weight: bold;
-  font-family: $font-basic-family;
-  background-color: #63d1bb;
+  font-weight: $font-accent-weight;
 }
 
 .category__list {
   padding: 0;
   margin: 0;
   list-style: 0;
+}
+
+.category__item {
+
+  &:nth-child(odd) {
+    background-color: #63d1bb;
+  }
+
+  &:nth-child(even) {
+    background-color: #56c3b2;
+  }
 }
 
 .category__link {

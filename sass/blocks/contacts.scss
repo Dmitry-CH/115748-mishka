@@ -1,8 +1,6 @@
 .contacts {
-  font-size: 14px;
-  line-height: 30px;
-  color: #444444;
-  font-family: $font-basic-family;
+  line-height: $line-accent-height;
+  color: $font-second-color;
 }
 
 .contacts__subtitle {
