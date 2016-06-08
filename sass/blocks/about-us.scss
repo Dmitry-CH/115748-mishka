@@ -7,4 +7,41 @@
 
 .about-us__subtitle {
   @include subtitle;
+
+  margin-bottom: 32px;
+}
+
+.about-us__wrap {
+  margin-bottom: 34px;
+}
+
+
+@media (min-width: $tablet) {
+
+  .about-us__subtitle {
+    margin-bottom: 55px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .about-us {
+    @include clearfix;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-us__container {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .about-us__subtitle {
+    margin-bottom: 48px;
+    font-size: 50px;
+    line-height: 57px;
+  }
 }

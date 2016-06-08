@@ -16,3 +16,9 @@ body {
   color: $font-basic-color;
   font-family: $font-basic-family;
 }
+
+.container-center {
+  position: relative;
+  @include container;
+  @include clearfix;
+}

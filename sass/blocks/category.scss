@@ -7,7 +7,7 @@
 .category__list {
   padding: 0;
   margin: 0;
-  list-style: 0;
+  list-style: none;
 }
 
 .category__item {
@@ -22,6 +22,33 @@
 }
 
 .category__link {
+  @include container;
+
+  display: block;
   color: #ffffff;
   text-decoration: none;
+}
+
+
+@media (min-width: $tablet) {
+
+  .category {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .category__list {
+    @include clearfix;
+    @include container;
+  }
+
+  .category__item {
+    float: left;
+    width: 50%;
+  }
+
+  .category__link {
+    width: auto;
+    margin: auto;
+  }
 }
