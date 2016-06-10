@@ -1,8 +1,12 @@
 .main-nav {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: $font-second-size;
   line-height: $line-basic-height;
   font-weight:$font-accent-weight;
-  background-color: #F7BE81;
+  background-color: #ffffff;
 
   &--closed {
     height: 0;

@@ -20,5 +20,4 @@ body {
 .container-center {
   position: relative;
   @include container;
-  @include clearfix;
 }

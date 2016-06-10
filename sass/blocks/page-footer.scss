@@ -1,8 +1,16 @@
 .page-footer {
-  background-color: #FFDEAD;
+  background-color: #f1f1f1;
 }
 
-.copyright__link {
-  font-size: 18px;
-  line-height: 18px;
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

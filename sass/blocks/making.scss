@@ -1,11 +1,60 @@
 .making {
-  background-color: #90EE90;
-
-  h3 {
-    font-size: $font-second-size;
-  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border: 1px solid #ececec;
 
   p {
     color: $font-second-color;
+  }
+}
+
+.making__title {
+  font-size: $font-second-size;
+}
+
+.making__video {
+
+  img {
+    display: block;
+  }
+}
+
+
+@media (min-width: $tablet) {
+
+  .making__title {
+    order: 1;
+  }
+
+  .making__descript {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .making {
+    flex-direction: row;
+  }
+
+  .making__title {
+    position: absolute;
+    top: 0;
+  }
+
+  .making__video {
+
+    img {
+      display: block;
+      width: 682px;
+      height: 455px;
+    }
+  }
+
+  .making__descript {
+    padding-top: 186px;
   }
 }

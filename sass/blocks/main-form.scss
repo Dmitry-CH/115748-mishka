@@ -1,3 +1,14 @@
+.main-form__block {
+  margin-top: 30px;
+  border: none;
+  border-top: 1px solid $font-accent-color;
+
+  textarea {
+    width: 100%;
+    border: 2px solid #444444;
+  }
+}
+
 .main-form__title {
   font-size: $font-second-size;
   line-height: $line-second-height;
@@ -6,10 +17,37 @@
   text-transform: uppercase;
 }
 
+.main-form__group {
+  flex-grow: 1;
+}
+
 .main-form__label-text,
 .main-form__label-radio,
 .main-form__label-checkbox {
   font-size: $font-second-size;
   line-height: 18px;
   font-weight: $font-accent-weight;
+}
+
+.main-form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include container;
+}
+
+
+@media (min-width: $tablet) {
+
+  .main-form__block {
+    border: 0;
+
+    &:nth-child(even) {
+      background: #f1f1f1;
+    }
+  }
+
+  .main-form__wrapper {
+    flex-direction: row;
+  }
 }

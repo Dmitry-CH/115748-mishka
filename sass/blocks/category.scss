@@ -5,6 +5,8 @@
 }
 
 .category__list {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -38,17 +40,16 @@
   }
 
   .category__list {
-    @include clearfix;
     @include container;
+
+    flex-direction: row;
   }
 
   .category__item {
-    float: left;
-    width: 50%;
+    flex-grow: 1;
   }
 
   .category__link {
     width: auto;
-    margin: auto;
   }
 }
