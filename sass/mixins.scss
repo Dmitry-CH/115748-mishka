@@ -15,13 +15,20 @@
   padding: 0 30px;
   margin: 0 auto;
 
+
   @media (min-width: $tablet) {
+
     padding: 0;
     width: 668px;
   }
 
   @media (min-width: $desktop) {
+
     width: 1050px;
+
+    &--padding-left {
+      padding-left: 175px;
+    }
   }
 }
 
@@ -37,6 +44,8 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  background: none;
+  outline: 0;
   cursor: pointer;
 }
 
@@ -45,4 +54,16 @@
   line-height: $line-accent-height;
   color: $font-basic-color;
   font-weight: $font-accent-weight;
+
+  @media (min-width: $tablet) {
+
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+
+    font-size: 50px;
+    line-height: 58px;
+  }
 }

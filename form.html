@@ -22,19 +22,24 @@
         </div>
       </div>
 
-      <div class="container-center">
-        <nav class="main-nav  main-nav--closed">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="main-nav  main-nav--closed">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
 
       <div class="intro">
         <div class="container-center">
+          <div class="intro__nav">
+            <ul class="intro__list">
+              <li class="intro__item"><a class="intro__link" href="#">Новые поступления</a></li>
+              <li class="intro__item"><a class="intro__link" href="#">Распродажа</a></li>
+            </ul>
+            <p class="intro__text">Бесплатная доставка по России</p>
+          </div>
           <h1 class="intro__title">Вязание на заказ</h1>
         </div>
       </div>
@@ -43,20 +48,20 @@
     <main class="page-form">
       <div class="container-center">
         <p class="intro-text">
-          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
-          форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
+          Мы будем рады воплотить в жизнь ваши пожелания!
+          <span class="break">Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</span>
         </p>
       </div>
 
       <form class="main-form" action="." method="post" name="main-form">
         <fieldset class="main-form__block">
           <div class="main-form__wrapper">
-            <legend class="main-form__title">Тип</legend>
+            <legend class="main-form__title"><span>Тип</span></legend>
 
             <div class="main-form__group">
               <div class="main-form__field">
                 <input class="main-form__input-radio" id="acces" type="radio" name="type" checked>
-                <label class="main-form__label-radio" for="acces">Аксессуар для интерьера</label>
+                <label class="main-form__label-radio" for="acces"><span>Аксессуар для интерьера</span></label>
               </div>
               <div class="main-form__field">
                 <input class="main-form__input-radio" id="toy" type="radio" name="type">
@@ -68,30 +73,30 @@
 
         <fieldset class="main-form__block">
           <div class="main-form__wrapper">
-            <legend class="main-form__title">Цвет</legend>
+            <legend class="main-form__title"><span>Цвет</span></legend>
 
             <div class="main-form__group">
-              <div class="main-form__field">
+              <div class="main-form__field  main-form__field--inline">
                 <input class="main-form__input-checkbox" id="white" type="checkbox" name="white">
                 <label class="main-form__label-checkbox" for="white">Белый</label>
               </div>
-              <div class="main-form__field">
+              <div class="main-form__field  main-form__field--inline">
                 <input class="main-form__input-checkbox" id="grey" type="checkbox" name="grey">
                 <label class="main-form__label-checkbox" for="grey">Серый</label>
               </div>
-              <div class="main-form__field">
+              <div class="main-form__field  main-form__field--inline">
                 <input class="main-form__input-checkbox" id="tiffani" type="checkbox" name="tiffani">
                 <label class="main-form__label-checkbox" for="tiffani">«Тиффани»</label>
               </div>
-              <div class="main-form__field">
+              <div class="main-form__field  main-form__field--inline">
                 <input class="main-form__input-checkbox" id="black" type="checkbox" name="black">
                 <label class="main-form__label-checkbox" for="black">Черный</label>
               </div>
-              <div class="main-form__field">
+              <div class="main-form__field  main-form__field--inline">
                 <input class="main-form__input-checkbox" id="pink" type="checkbox" name="pink">
                 <label class="main-form__label-checkbox" for="pink">Розовый</label>
               </div>
-              <div class="main-form__field">
+              <div class="main-form__field  main-form__field--inline">
                 <input class="main-form__input-checkbox" id="orange" type="checkbox" name="orange">
                 <label class="main-form__label-checkbox" for="orange">Оранжевый</label>
               </div>
@@ -101,7 +106,7 @@
 
         <fieldset class="main-form__block">
           <div class="main-form__wrapper">
-            <legend class="main-form__title">ФИО</legend>
+            <legend class="main-form__title"><span>ФИО</span></legend>
 
             <div class="main-form__group">
               <div class="main-form__field">
@@ -125,7 +130,7 @@
 
         <fieldset class="main-form__block">
           <div class="main-form__wrapper">
-            <legend class="main-form__title">Тел</legend>
+            <legend class="main-form__title"><span>Тел</span></legend>
 
             <div class="main-form__group">
               <div class="main-form__field">
@@ -136,7 +141,7 @@
           </div>
 
           <div class="main-form__wrapper">
-            <legend class="main-form__title">E-mail</legend>
+            <legend class="main-form__title"><span>E-mail</span></legend>
 
             <div class="main-form__group">
               <div class="main-form__field">
@@ -149,18 +154,19 @@
 
         <fieldset class="main-form__block">
           <div class="main-form__wrapper">
-            <legend class="main-form__title">Доп</legend>
+            <legend class="main-form__title"><span>Доп</span></legend>
 
             <div class="main-form__group">
               <textarea name="wishes" rows="8"
-                        placeholder="Опишите все ваши пожелания к заказу">
-              </textarea>
+                        placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
         </fieldset>
 
-        <div class="container-center">
+        <div class="container-center  main-form__container">
           <button class="main-form__btn  btn" type="submit">Отправить заказ</button>
+
+          <p class="main-form__note">Все поля являются обязательными</p>
         </div>
       </form>
     </main>

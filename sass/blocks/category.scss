@@ -2,6 +2,8 @@
   font-size: 18px;
   color: #ffffff;
   font-weight: $font-accent-weight;
+  font-family: 'Tahoma', 'Arial', sans-serif;
+  margin-bottom: 30px;
 }
 
 .category__list {
@@ -25,8 +27,9 @@
 
 .category__link {
   @include container;
-
   display: block;
+  padding-top: 27px;
+  padding-bottom: 28px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -35,21 +38,30 @@
 @media (min-width: $tablet) {
 
   .category {
+    margin-bottom: 54px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .category__list {
     @include container;
-
     flex-direction: row;
   }
 
   .category__item {
-    flex-grow: 1;
+    width: 50%;
   }
 
   .category__link {
     width: auto;
+    padding: 30px 0;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .category {
+    margin-bottom: 70px;
   }
 }

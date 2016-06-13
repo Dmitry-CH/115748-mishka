@@ -1,16 +1,33 @@
 .page-footer {
+  height: 160px;
+  margin-top: 58px;
   background-color: #f1f1f1;
 }
 
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 @media (min-width: $tablet) {
 
+  .page-footer {
+    height: 142px;
+    margin-top: 68px;
+  }
+
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .page-footer {
+    margin-top: 98px;
   }
 }

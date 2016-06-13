@@ -1,4 +1,21 @@
 .logo {
   text-align: center;
-  background-color: #2E9AFE;
+}
+
+@media (min-width: $tablet) {
+
+  .logo {
+    z-index: 10;
+    position: absolute;
+    top: 24px;
+    left: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .logo {
+    left: 50%;
+    right: 50%;
+  }
 }

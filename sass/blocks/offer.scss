@@ -1,17 +1,15 @@
 .offer {
+  margin-bottom: 38px;
   color: $font-second-color;
-  background-color: #FE2E2E;
 }
 
 .offer__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .offer__header {
   margin-bottom: 30px;
-  background: #87CEFA;
 }
 
 .offer__subtitle {
@@ -26,16 +24,14 @@
   text-transform: uppercase;
 }
 
-.offer__container {
-  background: #CD853F;
-}
-
+.offer__container,
 .offer__text {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .offer__picture {
-  margin: 0;
+  margin: 0;  // Обнуляем margin figure!
+  margin-bottom: 30px;
 
   img {
     display: block;
@@ -46,10 +42,10 @@
 
 .offer__bottom {
   text-align: center;
-  background: #00CED1;
 }
 
 .offer__price {
+  margin-bottom: 26px;
   font-size: $font-second-size;
   font-weight: $font-accent-weight;
 }
@@ -57,13 +53,34 @@
 
 @media (min-width: $tablet) {
 
+  .offer {
+    margin-bottom: 56px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
   .offer__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .offer__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .offer__caption {
+    padding: 0 30px;
+    text-align: center;
+
+    .break::before {
+      content: "\A";
+      white-space: pre;
+    }
   }
 
   .offer__container,
@@ -71,9 +88,79 @@
     width: 50%;
   }
 
+  .offer__container {
+    margin-bottom: 0;
+    padding-bottom: 124px;
+    padding-right: 42px;
+  }
+
+  .offer__text {
+    margin-bottom: 56px;
+  }
+
+  .offer__picture {
+    margin-bottom: 0;
+
+    img {
+      height: 404px;
+    }
+  }
+
   .offer__bottom {
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+
+  .offer__price {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .offer {
+    margin-bottom: 78px;
+  }
+
+  .offer__header {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: auto;
+  }
+
+  .offer__subtitle {
+    padding-left: 170px;
+  }
+
+  .offer__caption {
+    position: absolute;
+    left: 26px;
+  }
+
+  .offer__container {
+    width: 40%;
+    padding-top: 156px;
+    padding-right: 58px;
+  }
+
+  .offer__text {
+    margin-bottom: 68px;
+  }
+
+  .offer__picture {
+    width: 60%;
+  }
+
+  .offer__picture {
+
+    img {
+      height: 636px;
+    }
+  }
+
+  .offer__bottom {
+    left: 175px;
   }
 }

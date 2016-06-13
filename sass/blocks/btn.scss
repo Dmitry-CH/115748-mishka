@@ -1,5 +1,6 @@
 .btn {
   @include button();
+  text-align: center;
 }
 
 @media (min-width: $tablet) {
