@@ -1,3 +1,39 @@
 .page-header {
+  position: relative;
+  margin-bottom: 32px;
   background-color: #ffffff;
+}
+
+.page-header__top {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+@media (min-width: $tablet) {
+
+  .page-header {
+    margin-bottom: 78px;
+  }
+
+  .page-header__top {
+    height: 0;
+    border: 0;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .page-header {
+    margin-bottom: 128px;
+  }
 }

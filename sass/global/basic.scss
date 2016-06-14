@@ -16,3 +16,8 @@ body {
   color: $font-basic-color;
   font-family: $font-basic-family;
 }
+
+.container-center {
+  @include container;
+  position: relative;
+}

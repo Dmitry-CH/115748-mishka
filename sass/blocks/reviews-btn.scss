@@ -1,0 +1,28 @@
+.reviews-btn {
+  margin-bottom: 38px;
+}
+
+.reviews-btn__btn {
+  width: 50%;
+  height: 52px;
+  border: 1px solid #ececec;
+  font-size: 0;
+  background: none;
+  outline: none;
+
+  &:last-child {
+    margin-left: -4px;
+  }
+}
+
+
+@media (min-width: $tablet) {
+
+  .reviews-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 175px;
+    margin-bottom: 0;
+  }
+}
