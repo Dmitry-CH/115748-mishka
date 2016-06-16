@@ -1,13 +1,14 @@
 .main-nav {
   z-index: 5;
   position: absolute;
-  top: 43px;
+  top: 75px;
   left: 0;
   width: 100%;
+  background-color: #ffffff;
   font-size: $font-second-size;
   line-height: $line-basic-height;
   font-weight:$font-accent-weight;
-  background-color: #ffffff;
+  font-family: 'Verdana', 'Arial', sans-serif;
 
   &--closed {
     height: 0;
@@ -19,7 +20,6 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
   @include container;
 }
 
@@ -28,7 +28,7 @@
   color: $font-basic-color;
   text-decoration: none;
 
-  &:hover {
+  &[href]:hover {
     background-color: #fdd;
   }
 }
@@ -47,7 +47,6 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: flex-start;
   }
 
@@ -56,8 +55,9 @@
     &:nth-child(-n+2) {
       z-index: 10;
       position: absolute;
-      top: 100px;
+      top: 108px;
       left: 0;
+      font-size: 14px;
 
       .main-nav__link {
         padding: 0;
@@ -65,10 +65,11 @@
     }
 
     &:nth-child(2) {
-      left: 172px;
+      left: 167px;
     }
 
     &:nth-child(3) {
+      margin-left: auto;
       font-size: 0;
       width: 84px;
       border-left: 1px solid #ececec;
@@ -78,7 +79,7 @@
     &:last-child {
 
       .main-nav__link {
-        padding-left: 78px;
+        padding-left: 76px;
       }
     }
   }
@@ -98,19 +99,19 @@
 
     &:nth-child(-n+2) {
       position: static;
+      font-size: 16px;
 
       .main-nav__link {
         padding: 32px 0;
-        padding-right: 38px;
+        padding-right: 36px;
       }
     }
 
     &:nth-child(2) {
-      margin-right: 316px;
       border-left: 1px solid #ececec;
 
       .main-nav__link {
-        padding-left: 38px;
+        padding-left: 36px;
       }
     }
   }

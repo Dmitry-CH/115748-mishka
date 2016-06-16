@@ -1,13 +1,44 @@
+// Стилизация all-input
+.main-form__input-radio,
+.main-form__input-checkbox {
+  display: none;
+}
+
+.main-form__input-text,
+.main-form__input-tel,
+.main-form__input-email {
+  width: 100%;
+  padding: 15px 0px;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  background: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: 'Verdana', 'Arial', sans-serif;
+  outline: none;
+}
+
+// Стилизация textarea
+
+.main-form__textarea {
+  width: 100%;
+  padding: 15px 17px;
+  border: 2px solid #444444;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: 'Verdana', 'Arial', sans-serif;
+  outline: none;
+}
+
+// === ===
+
 .main-form__block {
   @include container;
   border: 0;
   margin-top: 24px;
   margin-bottom: 24px;
-
-  textarea {
-    width: 100%;
-    border: 2px solid #444444;
-  }
 }
 
 .main-form__wrapper {
@@ -17,11 +48,12 @@
 
 .main-form__title {
   position: relative;
-  height: 52px;
+  height: 50px;
   font-size: $font-second-size;
   line-height: $line-second-height;
   color: $font-accent-color;
   font-weight: $font-accent-weight;
+  font-family: $font-basic-family;
   text-transform: uppercase;
 
   span {
@@ -40,46 +72,18 @@
   }
 }
 
-.main-form__group {
-  flex-grow: 1;
-}
-
 .main-form__field {
   margin-bottom: 24px;
 
   &:last-child {
     margin-bottom: 0;
   }
-
-  &--inline {
-    display: block;
-    width: auto;
-  }
-}
-
-.main-form__input-radio,
-.main-form__input-checkbox {
-  display: none;
-}
-
-.main-form__input-radio:checked + .main-form__label-radio::before,
-.main-form__input-checkbox:checked + .main-form__label-checkbox::before {
-  background-color: red;
-}
-
-.main-form__label-text,
-.main-form__label-radio,
-.main-form__label-checkbox {
-  font-size: $font-second-size;
-  line-height: 16px;
-  font-weight: $font-accent-weight;
 }
 
 .main-form__label-radio,
 .main-form__label-checkbox {
   position: relative;
   display: inline-block;
-  height: 40px;
   padding-left: 64px;
   line-height: 40px;
 
@@ -108,6 +112,44 @@
   }
 }
 
+.main-form__input-radio:checked + .main-form__label-radio::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: $font-accent-color;
+}
+
+.main-form__input-checkbox:checked + .main-form__label-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 11px;
+  width: 20px;
+  height: 10px;
+  border: 2px solid #000000;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+}
+
+.main-form__wrapper--email {
+  margin-top: 24px;
+}
+
+.main-form__button-form {
+  font-weight: normal;
+  font-family: $font-basic-family;
+}
+
+.main-form__btn {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
 .main-form__note {
   display: none;
 }
@@ -115,28 +157,68 @@
 
 @media (min-width: $tablet) {
 
+  .main-form__input-text,
+  .main-form__input-tel,
+  .main-form__input-email {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
   .main-form__block {
     width: auto;
-    padding: 60px 0;
     margin: 0;
     border: 0;
 
     &:nth-child(even) {
       background: #f1f1f1;
     }
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    &--type {
+      padding: 49px 0;
+    }
+
+    &--color {
+      padding: 58px 0;
+    }
+
+    &--username {
+      padding: 46px 0;
+
+      .main-form__field {
+        margin-bottom: 22px;
+      }
+    }
+
+    &--contact {
+      padding: 58px 0;
+
+      .main-form__wrapper--email {
+        margin-top: 24px;
+      }
+    }
+
+    &--other {
+      padding: 64px 0;
+      padding-bottom: 50px;
+    }
   }
 
   .main-form__wrapper {
-    flex-direction: row;
-
     @include container;
+    flex-direction: row;
   }
 
   .main-form__title {
     flex-shrink: 0;
-    padding-top: 20px;
+    padding-top: 17px;
     width: 165px;
     height: auto;
+    font-size: 18px;
+    line-height: 18px;
     text-align: left;
 
     span {
@@ -152,20 +234,51 @@
     }
   }
 
+  .main-form__group {
+    flex-grow: 1;
+  }
+
   .main-form__field {
+    margin-bottom: 24px;
 
     &--inline {
       display: inline-block;
-      width: 256px;
+      width: 260px;
 
       &:nth-child(even) {
-      width: 186px;
+      width: 230px;
       }
 
       &:nth-last-child(-n+2) {
         margin-bottom: 0;
       }
     }
+
+    &--flex {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  .main-form__input-radio:checked + .main-form__label-radio::after {
+    top: 16px;
+    left: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .main-form__input-checkbox:checked + .main-form__label-checkbox::after {
+    top: 14px;
+    left: 12px;
+    width: 30px;
+    height: 18px;
+  }
+
+  .main-form__label-text,
+  .main-form__label-radio,
+  .main-form__label-checkbox {
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .main-form__label-radio,
@@ -173,7 +286,7 @@
     position: relative;
     display: inline-block;
     height: 54px;
-    padding-left: 78px;
+    padding-left: 82px;
     line-height: 54px;
 
     &::before {
@@ -182,18 +295,27 @@
     }
   }
 
-  .main-form__container {
+  .main-form__label-text {
+    padding-right: 25px;
+  }
+
+  .main-form__button-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
+  .main-form__btn {
+    width: 230px;
+    margin-top: 0;
+  }
+
   .main-form__note {
     display: inline-block;
     font-size: 16px;
     line-height: 30px;
-    color: #444444;
+    color: $font-second-color;
   }
 }
 
@@ -201,6 +323,15 @@
 
   .intro-text {
     padding-left: 175px;
+  }
+
+  .main-form__block--username,
+  .main-form__block--contact,
+  .main-form__block--other {
+
+    .main-form__group {
+      padding-right: 175px;
+    }
   }
 
   .main-form__title {
@@ -211,10 +342,10 @@
   .main-form__field {
 
     &--inline {
-      width: 256px;
+      width: 260px;
 
       &:nth-child(even) {
-      width: 256px;
+      width: 260px;
       }
 
       &:nth-last-child(-n+3) {
@@ -226,5 +357,11 @@
   .main-form--wrapper {
     padding-left: 175px;
     margin-top: 30px;
+  }
+
+  .main-form__button-form {
+    padding-left: 175px;
+    padding-right: 175px;
+    margin-top: 40px;
   }
 }

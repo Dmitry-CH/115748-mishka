@@ -1,6 +1,8 @@
 .btn {
   @include button();
+  font-family: $font-basic-family;
   text-align: center;
+
 }
 
 @media (min-width: $tablet) {

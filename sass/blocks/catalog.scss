@@ -1,13 +1,13 @@
 .catalog {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
+
 
 @media (min-width: $desktop) {
 
   .catalog {
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
