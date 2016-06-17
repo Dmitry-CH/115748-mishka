@@ -1,5 +1,6 @@
 .logo-footer {
   display: none;
+  width: 103px;
 }
 
 
@@ -7,5 +8,10 @@
 
   .logo-footer {
     display: block;
+
+    a {
+      display: block;
+      line-height: 0;
+    }
   }
 }

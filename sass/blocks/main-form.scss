@@ -12,10 +12,10 @@
   border: 0;
   border-bottom: 2px solid #000000;
   background: none;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: normal;
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-size: $font-second-size;
+  line-height: $line-third-height;
+  font-weight: $font-basic-weight;
+  font-family: $font-second-family;
   outline: none;
 }
 
@@ -27,8 +27,8 @@
   border: 2px solid #444444;
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-weight: $font-basic-weight;
+  font-family: $font-second-family;
   outline: none;
 }
 
@@ -141,13 +141,9 @@
 }
 
 .main-form__button-form {
-  font-weight: normal;
-  font-family: $font-basic-family;
-}
-
-.main-form__btn {
   margin-top: 30px;
-  font-weight: bold;
+  font-weight: $font-basic-weight;
+  font-family: $font-basic-family;
 }
 
 .main-form__note {
@@ -160,8 +156,9 @@
   .main-form__input-text,
   .main-form__input-tel,
   .main-form__input-email {
-    font-size: 18px;
-    line-height: 18px;
+    padding-left: 16px;
+    font-size: $font-third-size;
+    line-height: $line-third-height;
   }
 
   .main-form__block {
@@ -171,10 +168,6 @@
 
     &:nth-child(even) {
       background: #f1f1f1;
-    }
-
-    &:nth-child(2) {
-      margin-bottom: 0;
     }
 
     &--type {
@@ -203,7 +196,7 @@
 
     &--other {
       padding: 64px 0;
-      padding-bottom: 50px;
+      padding-bottom: 51px;
     }
   }
 
@@ -217,14 +210,12 @@
     padding-top: 17px;
     width: 165px;
     height: auto;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: $font-third-size;
+    line-height: $line-third-height;
     text-align: left;
 
     span {
       position: static;
-      top: auto;
-      left: auto;
       padding-right: 0;
       background: none;
     }
@@ -277,8 +268,8 @@
   .main-form__label-text,
   .main-form__label-radio,
   .main-form__label-checkbox {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: $font-third-size;
+    line-height: $line-third-height;
   }
 
   .main-form__label-radio,
@@ -304,11 +295,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0;
   }
 
   .main-form__btn {
     width: 230px;
-    margin-top: 0;
   }
 
   .main-form__note {
@@ -352,11 +343,6 @@
         margin-bottom: 0;
       }
     }
-  }
-
-  .main-form--wrapper {
-    padding-left: 175px;
-    margin-top: 30px;
   }
 
   .main-form__button-form {

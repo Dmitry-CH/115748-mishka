@@ -25,7 +25,7 @@
     font-size: $font-second-size;
     color: $font-basic-color;
     font-weight: $font-accent-weight;
-    font-family: 'Verdana', 'Arial', sans-serif;
+    font-family: $font-second-family;
     text-decoration: none;
   }
 
@@ -46,7 +46,7 @@
 
   span {
     font-weight: $font-accent-weight;
-    font-family: 'Verdana', 'Arial', sans-serif;
+    font-family: $font-second-family;
   }
 }
 
@@ -75,7 +75,7 @@
   .catalog-item__top {
 
     a {
-      font-size: 18px;
+      font-size: $font-third-size;
     }
 
     p {
@@ -88,7 +88,7 @@
     margin-top: auto;
 
     span {
-      font-size: 16px;
+      font-size: $font-second-size;
     }
   }
 }

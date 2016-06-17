@@ -1,0 +1,23 @@
+.page-main {
+  z-index: 1;
+  position: relative;
+  margin-top: -30px;
+  margin-bottom: 38px;
+}
+
+
+@media (min-width: $tablet) {
+
+  .page-main {
+    margin-top: -199px;
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .page-main {
+    margin-top: -248px;
+    margin-bottom: 100px;
+  }
+}

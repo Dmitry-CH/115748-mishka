@@ -7,8 +7,8 @@
   background-color: #ffffff;
   font-size: $font-second-size;
   line-height: $line-basic-height;
-  font-weight:$font-accent-weight;
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-weight: $font-accent-weight;
+  font-family: $font-second-family;
 
   &--closed {
     height: 0;
@@ -20,11 +20,17 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  @include container;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav__link {
+  @include container;
   display: block;
+  padding: 27px 0;
+  padding-left: 46px;
   color: $font-basic-color;
   text-decoration: none;
 
@@ -44,6 +50,7 @@
   }
 
   .main-nav__list {
+    @include container;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -51,6 +58,7 @@
   }
 
   .main-nav__item {
+    border-bottom: 0;
 
     &:nth-child(-n+2) {
       z-index: 10;
@@ -85,6 +93,8 @@
   }
 
   .main-nav__link {
+    width: auto;
+    margin: 0;
     padding: 32px 0;
   }
 }

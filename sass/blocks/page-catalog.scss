@@ -1,3 +1,19 @@
 .page-catalog {
   @include container;
+  margin-bottom: 58px;
+}
+
+
+@media (min-width: $tablet) {
+
+  .page-catalog {
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .page-catalog {
+    margin-top: 98px;
+  }
 }

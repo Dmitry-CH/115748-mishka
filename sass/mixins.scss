@@ -38,10 +38,11 @@
   height: $height;
   padding: 16px 0;
   border: 2px solid #444444;
-  font-size: 16px;
-  line-height: 16px;
-  color: #444444;
-  font-weight: bold;
+  font-size: $font-second-size;
+  line-height: $line-second-height;
+  color: $font-second-color;
+  font-weight: $font-accent-weight;
+  font-family: $font-basic-family;
   text-transform: uppercase;
   text-decoration: none;
   background: none;
@@ -54,6 +55,8 @@
   line-height: $line-accent-height;
   color: $font-basic-color;
   font-weight: $font-accent-weight;
+  font-family: $font-second-family;
+  word-spacing: -1px;
 
   @media (min-width: $tablet) {
 
