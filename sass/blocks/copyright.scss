@@ -25,7 +25,8 @@
 @media (min-width: $tablet) {
 
   .copyright {
-    width: auto;
+    justify-content: flex-end;
+    width: 33.3334%;
     padding: 0;
   }
 }

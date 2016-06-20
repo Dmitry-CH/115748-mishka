@@ -32,6 +32,11 @@
   padding-bottom: 28px;
   color: #ffffff;
   text-decoration: none;
+
+  .break::before {
+    content: "\A";
+    white-space: pre;
+  }
 }
 
 

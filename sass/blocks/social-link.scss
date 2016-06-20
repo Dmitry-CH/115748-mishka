@@ -10,13 +10,8 @@
   display: inline-block;
   width: 26px;
   height: 35px;
-  margin-right: 31px;
+  margin: 0 15px;
   font-size: 0;
-  line-height: 0;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &--in {
     background: url('../img/icon-insta.svg') no-repeat;
@@ -38,7 +33,7 @@
 @media (min-width: $tablet) {
 
   .social-link {
-    width: auto;
+    width: 33.3334%;
     padding: 0;
     border: 0;
   }

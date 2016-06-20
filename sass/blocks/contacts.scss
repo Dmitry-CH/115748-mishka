@@ -16,7 +16,6 @@
 
 .contacts__item {
   display: flex;
-  flex-direction: row;
   margin-bottom: 30px;
 
   a {
@@ -38,6 +37,7 @@
     margin: 0 auto;
   }
 }
+
 
 @media (min-width: $tablet) {
 
