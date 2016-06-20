@@ -4,7 +4,7 @@
 
 .reviews-btn__btn {
   width: 50%;
-  height: 52px;
+  padding: 10px 0;
   border: 1px solid #ececec;
   font-size: 0;
   background: none;
@@ -13,6 +13,16 @@
   &:last-child {
     margin-left: -4px;
   }
+}
+
+.reviews-btn__btn--prev {
+  background: url('../img/icon-left-arrow.svg') no-repeat;
+  background-position: center;
+}
+
+.reviews-btn__btn--next {
+  background: url('../img/icon-right-arrow.svg') no-repeat;
+  background-position: center;
 }
 
 
@@ -24,5 +34,13 @@
     right: 0;
     width: 175px;
     margin-bottom: 0;
+  }
+
+  .reviews-btn__btn {
+    border: 0;
+
+    &:last-child {
+      margin-left: -5px;
+    }
   }
 }

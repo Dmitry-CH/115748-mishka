@@ -2,10 +2,3 @@
   @include button();
   text-align: center;
 }
-
-@media (min-width: $tablet) {
-
-  .btn {
-    width: 292px;
-  }
-}

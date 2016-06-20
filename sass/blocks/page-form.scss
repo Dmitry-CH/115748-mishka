@@ -1,0 +1,22 @@
+.page-form {
+  margin-bottom: 58px;
+  font-size: $font-second-size;
+  line-height: $line-third-height;
+  font-weight: $font-accent-weight;
+  font-family: $font-second-family;
+}
+
+
+@media (min-width: $tablet) {
+
+  .page-form {
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .page-form {
+    margin-top: 98px;
+  }
+}

@@ -1,11 +1,11 @@
 .about-us {
-  margin-top: 76px;
-  margin-bottom: 60px;
+  margin-top: 70px;
+  margin-bottom: 24px;
 }
 
 .about-us__subtitle {
   @include subtitle;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .about-us__container {
@@ -13,37 +13,49 @@
   flex-direction: column;
 }
 
-.about-us__wrapper {
+.about-us__block {
   width: 100%;
 }
 
 .about-us__wrap {
-  padding-top: 56px;
-  margin-bottom: 36px;
+  position: relative;
+  padding-top: 53px;
+  margin-bottom: 34px;
+}
+
+.about-us__img {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 32px;
+  height: 40px;
+  background: url('../img/icon-feature-1.svg') no-repeat;
 }
 
 .about-us__text {
   font-size: $font-second-size;
-  line-height: 18px;
+  line-height: $line-third-height;
   font-weight: $font-accent-weight;
+  font-family: $font-second-family;
 }
 
 
 @media (min-width: $tablet) {
 
   .about-us {
-    margin-bottom: 80px;
+    margin-top: 115px;
+    margin-bottom: 22px;
   }
 
   .about-us__subtitle {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .about-us__container {
     flex-direction: row;
   }
 
-  .about-us__wrapper {
+  .about-us__block {
     width: 50%;
   }
 
@@ -60,10 +72,11 @@
 @media (min-width: $desktop) {
 
   .about-us {
-    margin-bottom: 88px;
+    margin-top: 154px;
+    margin-bottom: 28px;
   }
 
-  .about-us__wrapper {
+  .about-us__block {
     width: 40%;
 
     &:last-child {

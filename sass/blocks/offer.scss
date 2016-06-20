@@ -1,5 +1,5 @@
 .offer {
-  margin-bottom: 38px;
+  margin-bottom: 50px;
   color: $font-second-color;
 }
 
@@ -9,11 +9,12 @@
 }
 
 .offer__header {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .offer__subtitle {
   @include subtitle;
+  margin-bottom: 7px;
 }
 
 .offer__caption {
@@ -24,19 +25,32 @@
   text-transform: uppercase;
 }
 
-.offer__container,
-.offer__text {
+.offer__container {
   margin-bottom: 26px;
+}
+
+.offer__text {
+  margin-bottom: 16px;
+}
+
+.offer__parameters {
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec;
+    line-height: 20px;
+  }
 }
 
 .offer__picture {
   margin: 0;  // Обнуляем margin figure!
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   img {
     display: block;
     width: 100%;
-    height: auto;
   }
 }
 
@@ -48,13 +62,14 @@
   margin-bottom: 26px;
   font-size: $font-second-size;
   font-weight: $font-accent-weight;
+  font-family: $font-second-family;
 }
 
 
 @media (min-width: $tablet) {
 
   .offer {
-    margin-bottom: 56px;
+    margin-bottom: 68px;
     font-size: 16px;
     line-height: 30px;
   }
@@ -70,7 +85,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
 
   .offer__caption {
@@ -95,7 +110,8 @@
   }
 
   .offer__text {
-    margin-bottom: 56px;
+    margin-top: -8px;
+    margin-bottom: 34px;
   }
 
   .offer__picture {
@@ -110,9 +126,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 292px;
   }
 
   .offer__price {
+    margin-bottom: 32px;
     font-size: 18px;
   }
 }
@@ -120,7 +138,7 @@
 @media (min-width: $desktop) {
 
   .offer {
-    margin-bottom: 78px;
+    margin-bottom: 96px;
   }
 
   .offer__header {
@@ -136,7 +154,8 @@
 
   .offer__caption {
     position: absolute;
-    left: 26px;
+    top: 20px;
+    left: 20px;
   }
 
   .offer__container {
@@ -146,7 +165,8 @@
   }
 
   .offer__text {
-    margin-bottom: 68px;
+    margin-top:  0;
+    margin-bottom: 52px;
   }
 
   .offer__picture {

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Вязание на заказ</title>
+    <title>HTML Academy: Вязяние на заказ</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -25,7 +25,7 @@
       <nav class="main-nav  main-nav--closed">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Вязяние на заказ</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
         </ul>
@@ -40,7 +40,7 @@
             </ul>
             <p class="intro__text">Бесплатная доставка по России</p>
           </div>
-          <h1 class="intro__title">Вязание на заказ</h1>
+          <h1 class="intro__title">Вязяние на заказ</h1>
         </div>
       </div>
     </header>
@@ -54,9 +54,9 @@
       </div>
 
       <form class="main-form" action="." method="post" name="main-form">
-        <fieldset class="main-form__block">
+        <fieldset class="main-form__block  main-form__block--type">
           <div class="main-form__wrapper">
-            <legend class="main-form__title"><span>Тип</span></legend>
+            <div class="main-form__title"><span>Тип</span></div>
 
             <div class="main-form__group">
               <div class="main-form__field">
@@ -71,9 +71,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="main-form__block">
+        <fieldset class="main-form__block  main-form__block--color">
           <div class="main-form__wrapper">
-            <legend class="main-form__title"><span>Цвет</span></legend>
+            <div class="main-form__title"><span>Цвет</span></div>
 
             <div class="main-form__group">
               <div class="main-form__field  main-form__field--inline">
@@ -104,22 +104,22 @@
           </div>
         </fieldset>
 
-        <fieldset class="main-form__block">
+        <fieldset class="main-form__block  main-form__block--username">
           <div class="main-form__wrapper">
-            <legend class="main-form__title"><span>ФИО</span></legend>
+            <div class="main-form__title"><span>ФИО</span></div>
 
             <div class="main-form__group">
-              <div class="main-form__field">
+              <div class="main-form__field  main-form__field--flex">
                 <label class="main-form__label-text" for="surname">Фамилия:</label>
                 <input class="main-form__input-text" id="surname" type="text"
                        name="surname" placeholder="Укажите фамилию">
               </div>
-              <div class="main-form__field">
+              <div class="main-form__field  main-form__field--flex">
                 <label class="main-form__label-text" for="name">Имя:</label>
                 <input class="main-form__input-text" id="name" type="text"
                        name="name" placeholder="Введите ваше имя">
               </div>
-              <div class="main-form__field">
+              <div class="main-form__field  main-form__field--flex">
                 <label class="main-form__label-text" for="patronymic">Отчество:</label>
                 <input class="main-form__input-text" id="patronymic" type="text"
                        name="patronymic" placeholder="Отчество, если желаете">
@@ -128,9 +128,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="main-form__block">
+        <fieldset class="main-form__block  main-form__block--contact">
           <div class="main-form__wrapper">
-            <legend class="main-form__title"><span>Тел</span></legend>
+            <div class="main-form__title"><span>Тел</span></div>
 
             <div class="main-form__group">
               <div class="main-form__field">
@@ -140,8 +140,8 @@
             </div>
           </div>
 
-          <div class="main-form__wrapper">
-            <legend class="main-form__title"><span>E-mail</span></legend>
+          <div class="main-form__wrapper  main-form__wrapper--email">
+            <div class="main-form__title"><span>E-mail</span></div>
 
             <div class="main-form__group">
               <div class="main-form__field">
@@ -152,18 +152,18 @@
           </div>
         </fieldset>
 
-        <fieldset class="main-form__block">
+        <fieldset class="main-form__block  main-form__block--other">
           <div class="main-form__wrapper">
-            <legend class="main-form__title"><span>Доп</span></legend>
+            <div class="main-form__title"><span>Доп</span></div>
 
             <div class="main-form__group">
-              <textarea name="wishes" rows="8"
+              <textarea class="main-form__textarea" name="wishes" rows="6"
                         placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
         </fieldset>
 
-        <div class="container-center  main-form__container">
+        <div class="container-center  main-form__button-form">
           <button class="main-form__btn  btn" type="submit">Отправить заказ</button>
 
           <p class="main-form__note">Все поля являются обязательными</p>

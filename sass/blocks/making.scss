@@ -9,31 +9,28 @@
 }
 
 .making__title {
+  padding: 23px 0;
   padding-left: 90px;
-  margin: 22px 0;
   font-size: $font-second-size;
+  font-family: $font-second-family;
 }
 
 .making__video {
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+  line-height: 0;
 }
 
 .making__descript {
   padding: 0 34px;
+  padding-top: 25px;
 }
 
 .making__text {
-  margin-top: 30px;
+  margin: 4px 0;
 }
 
 .making__btn {
-  width: 100%;
-  margin: 30px 0;
+  margin-top: 20px;
+  margin-bottom: 33px;
 }
 
 
@@ -41,29 +38,35 @@
 
   .making__title {
     order: 1;
-    padding: 0 42px;
-    margin: 32px 0;
+    padding: 0 10px;
+    padding-left: 106px;
+    margin: 23px 0;
+    margin-top: 38px;
+    font-size: $font-third-size;
   }
 
   .making__video {
 
     img {
+      width: 100%;
       height: 455px;
     }
   }
 
   .making__descript {
     order: 2;
-    padding: 0 42px;
+    padding: 0 41px;
   }
 
   .making__text {
-    margin-top: 14px;
+    margin-top: 10px;
+    font-size: $font-second-size;
+    line-height: $line-accent-height;
   }
 
   .making__btn {
-    margin: 46px 0;
-    margin-top: 38px;
+    margin: 45px 0;
+    margin-top: 30px;
   }
 }
 
@@ -76,27 +79,29 @@
 
   .making__title {
     position: absolute;
-    top: 102px;
-    left: 762px;
+    top: 98px;
+    left: 759px;
     width: 122px;
     padding: 0;
+    margin: 0;
   }
 
   .making__video {
+    flex-shrink: 0;
 
     img {
       width: 682px;
-      height: 455px;
     }
   }
 
   .making__descript {
-    padding-top: 186px;
-    padding-left: 80px;
-    padding-right: 54px;
+    padding-top: 170px;
+    padding-left: 78px;
+    padding-right: 50px;
   }
 
   .making__btn {
-    margin-top: 50px;
+    width: 230px;
+    margin-top: 41px;
   }
 }

@@ -1,5 +1,9 @@
 .logo {
   text-align: center;
+
+  img {
+    display: inline-block;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -16,6 +20,6 @@
 
   .logo {
     left: 50%;
-    right: 50%;
+    transform: translateX(-50%);
   }
 }
