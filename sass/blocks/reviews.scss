@@ -37,6 +37,13 @@
 
   .reviews--image {
     background: url('../img/review@1x.jpg') no-repeat;
+    background-position: center left;
+
+    @media #{$retina} {
+      background: url('../img/review@2x.jpg') no-repeat;
+      background-position: center left;
+      background-size: 350px auto;
+    }
   }
 
   .reviews__slider {
@@ -76,6 +83,13 @@
     padding-top: 68px;
     padding-bottom: 64px;
     background: url('../img/review@1x.jpg') no-repeat;
+    background-position: center left;
+
+    @media #{$retina} {
+      background: url('../img/review@2x.jpg') no-repeat;
+      background-position: center left;
+      background-size: 350px auto;
+    }
   }
 
   .reviews__subtitle {

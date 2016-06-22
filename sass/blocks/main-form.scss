@@ -9,6 +9,7 @@
 .main-form__input-email {
   width: 100%;
   padding: 15px 0px;
+  padding-right: 32px;
   border: 0;
   border-bottom: 2px solid #000000;
   background: none;
@@ -73,10 +74,26 @@
 }
 
 .main-form__field {
+  position: relative;
   margin-bottom: 24px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.main-form__icon {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  fill: #c1c1c1;
+
+  &--phone {
+    top: 12px;
+  }
+
+  &--mail {
+    top: 10px;
   }
 }
 
@@ -157,6 +174,7 @@
   .main-form__input-tel,
   .main-form__input-email {
     padding-left: 16px;
+    padding-right: 52px;
     font-size: $font-third-size;
     line-height: $line-third-height;
   }
@@ -251,6 +269,10 @@
     }
   }
 
+  .main-form__icon {
+    right: 20px;
+  }
+
   .main-form__input-radio:checked + .main-form__label-radio::after {
     top: 16px;
     left: 16px;
@@ -312,6 +334,12 @@
 
 @media (min-width: $desktop) {
 
+  .main-form__input-text,
+  .main-form__input-tel,
+  .main-form__input-email {
+    padding-right: 32px;
+  }
+
   .intro-text {
     padding-left: 175px;
   }
@@ -343,6 +371,10 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  .main-form__icon {
+    right: 10px;
   }
 
   .main-form__button-form {

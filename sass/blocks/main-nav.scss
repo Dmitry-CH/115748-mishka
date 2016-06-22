@@ -14,6 +14,10 @@
     height: 0;
     overflow: hidden;
   }
+
+  &--open {
+    position: absolute;
+  }
 }
 
 .main-nav__list {
@@ -23,6 +27,7 @@
 }
 
 .main-nav__item {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -31,13 +36,20 @@
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
-  padding-left: 46px;
+  padding-left: 76px;
   color: $font-basic-color;
   text-decoration: none;
 
   &[href]:hover {
     background-color: #fdd;
   }
+}
+
+.main-nav__icon {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  fill: #d2d2d2;
 }
 
 
@@ -84,19 +96,26 @@
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
     }
-
-    &:last-child {
-
-      .main-nav__link {
-        padding-left: 76px;
-      }
-    }
   }
 
   .main-nav__link {
     width: auto;
     margin: 0;
     padding: 32px 0;
+
+    &--search {
+      text-align: center;
+    }
+  }
+
+  .main-nav__icon {
+    position: static;
+    vertical-align: middle;
+
+    &--cart {
+      margin: 0 38px;
+      vertical-align: text-top;
+    }
   }
 }
 

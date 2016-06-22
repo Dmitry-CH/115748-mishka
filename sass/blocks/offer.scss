@@ -47,11 +47,6 @@
 .offer__picture {
   margin: 0;  // Обнуляем margin figure!
   margin-bottom: 24px;
-
-  img {
-    display: block;
-    width: 100%;
-  }
 }
 
 .offer__bottom {
@@ -116,10 +111,6 @@
 
   .offer__picture {
     margin-bottom: 0;
-
-    img {
-      height: 404px;
-    }
   }
 
   .offer__bottom {
@@ -171,13 +162,6 @@
 
   .offer__picture {
     width: 60%;
-  }
-
-  .offer__picture {
-
-    img {
-      height: 636px;
-    }
   }
 
   .offer__bottom {
