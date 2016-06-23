@@ -1,0 +1,32 @@
+.icon {
+  fill: #63d1bb;
+}
+
+.icon__category {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  fill: #149080;
+  opacity: 0.5;
+  transform: translateY(-50%);
+
+  &--interior {
+    right: 40px;
+  }
+}
+
+
+@media (min-width: $tablet) {
+
+  .icon__category {
+    right: 35px;
+
+    &--interior {
+      right: 35px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+}

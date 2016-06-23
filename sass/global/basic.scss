@@ -17,13 +17,18 @@ body {
   font-family: $font-basic-family;
 }
 
+.no-js {
+
+  .main-nav--no-js {
+    position: static;
+    height: auto;
+    overflow: visible;
+  }
+}
+
 .container-center {
   @include container;
   position: relative;
-}
-
-.icon {
-  fill: #63d1bb;
 }
 
 img {

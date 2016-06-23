@@ -1,5 +1,9 @@
 .offer {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background-image: url('../img/bg-zigzag-line.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 110%;
   color: $font-second-color;
 }
 
@@ -64,7 +68,7 @@
 @media (min-width: $tablet) {
 
   .offer {
-    margin-bottom: 68px;
+    padding-bottom: 68px;
     font-size: 16px;
     line-height: 30px;
   }
@@ -129,7 +133,8 @@
 @media (min-width: $desktop) {
 
   .offer {
-    margin-bottom: 96px;
+    padding-bottom: 96px;
+    background-size: auto;
   }
 
   .offer__header {
