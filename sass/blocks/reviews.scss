@@ -7,9 +7,6 @@
   line-height: $line-accent-height;
 }
 
-.reviews__decor {
-}
-
 .reviews__subtitle {
   @include subtitle;
   margin-bottom: 24px;
@@ -85,6 +82,11 @@
     background-size: auto;
   }
 
+  .reviews__decor {
+    padding-top: 14px;
+    padding-bottom: 0;
+  }
+
   .reviews--image {
     background: none;
   }
@@ -92,12 +94,12 @@
   .reviews__image {
     padding-top: 68px;
     padding-bottom: 64px;
-    background: url('../img/review@1x.jpg') no-repeat;
+    background-image: url('../img/review@1x.jpg');
+    background-repeat: no-repeat;
     background-position: center left;
 
     @media #{$retina} {
-      background: url('../img/review@2x.jpg') no-repeat;
-      background-position: center left;
+      background-image: url('../img/review@2x.jpg');
       background-size: 350px auto;
     }
   }

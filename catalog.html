@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог товаров</title>
@@ -100,27 +100,29 @@
         </div>
       </div>
 
-      <nav class="main-nav  main-nav--closed">
+      <nav class="main-nav  main-nav--closed  main-nav--no-js">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязяние на заказ</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link  main-nav__link--search" href="#">
-              <svg class="icon  main-nav__icon" width="18" height="18">
+              <svg class="icon  icon__main-nav" width="18" height="18">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
               </svg>
+
               Поиск по сайту
             </a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link  main-nav__link--cart" href="#">
-              <svg class="icon  main-nav__icon  main-nav__icon--cart" width="20" height="19">
+              <svg class="icon  icon__main-nav  icon__main-nav--cart" width="20" height="19">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
+
               Корзина: пока пуста
             </a>
           </li>
@@ -165,7 +167,7 @@
             <div class="catalog-item__bottom">
               <span class="js-catalog-price">1 200 руб.</span>
               <a href="#" title="Купить">
-                <svg class="icon  catalog-item__icon" width="21" height="19">
+                <svg class="icon  icon__catalog-item" width="21" height="19">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>
               </a>
@@ -195,7 +197,7 @@
             <div class="catalog-item__bottom">
               <span class="js-catalog-price">690 руб.</span>
               <a href="#" title="Купить">
-                <svg class="icon  catalog-item__icon" width="21" height="19">
+                <svg class="icon  icon__catalog-item" width="21" height="19">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>
               </a>
@@ -225,7 +227,7 @@
             <div class="catalog-item__bottom">
               <span class="js-catalog-price">1 500 руб.</span>
               <a href="#" title="Купить">
-                <svg class="icon  catalog-item__icon" width="21" height="19">
+                <svg class="icon  icon__catalog-item" width="21" height="19">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>
               </a>
@@ -236,14 +238,14 @@
 
       <section class="making">
         <h3 class="making__title">
-          <svg class="icon  making__icon  making__icon--video" width="32" height="32">
+          <svg class="icon  icon__making  icon__making--video" width="32" height="32">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video"></use>
           </svg>
 
           <span>Процесс производства</span>
         </h3>
         <div class="making__video">
-          <svg class="icon  making__icon  making__icon--play" width="100" height="76">
+          <svg class="icon  icon__making  icon__making--play" width="100" height="76">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
           </svg>
 
@@ -273,7 +275,7 @@
       <div class="container-center  page-footer__wrapper">
         <div class="logo-footer">
           <a href="index.html">
-            <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+            <img src="img/logo-footer.svg" width="102" height="34" alt="Mishka">
           </a>
         </div>
 
@@ -286,7 +288,7 @@
         <div class="copyright">
           Разработано
           <a class="copyright__link" href="#" title="HTML Academy">
-            <svg class="icon  copyright__icon" width="27" height="35">
+            <svg class="icon  icon__copyright" width="27" height="35">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>

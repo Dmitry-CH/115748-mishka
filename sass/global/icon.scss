@@ -2,6 +2,13 @@
   fill: #63d1bb;
 }
 
+.icon__main-nav {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  fill: #d2d2d2;
+}
+
 .icon__category {
   position: absolute;
   top: 50%;
@@ -15,18 +22,123 @@
   }
 }
 
+.icon__about-us {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon__flag {
+  display: none;
+}
+
+.icon__map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon__catalog-item {
+  fill: #d2d2d2;
+}
+
+.icon__making {
+
+  &--video {
+    margin-right: 18px;
+  }
+
+  &--play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.icon__main-form {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  fill: #c1c1c1;
+
+  &--phone {
+    top: 12px;
+  }
+
+  &--mail {
+    top: 10px;
+  }
+}
+
+.icon__copyright {
+  width: 27px;
+  height: 35px;
+}
+
 
 @media (min-width: $tablet) {
 
+  .icon__main-nav {
+    position: static;
+    vertical-align: middle;
+
+    &--cart {
+      margin: 0 38px;
+      vertical-align: text-top;
+    }
+  }
+
   .icon__category {
+    top: 42%;
     right: 35px;
 
     &--interior {
       right: 35px;
     }
   }
+
+  .icon__flag {
+    position: absolute;
+    top: -16px;
+    right: 0;
+    display: block;
+  }
+
+  .icon__making {
+
+    &--video {
+      margin-top: -8px;
+      margin-right: 26px;
+      vertical-align: middle;
+    }
+  }
+
+  .icon__main-form {
+    right: 20px;
+  }
 }
 
 @media (min-width: $desktop) {
 
+  .icon__category {
+    top: 46%;
+  }
+
+  .icon__flag {
+    top: 56px;
+    left: -110px;
+  }
+
+  .icon__making {
+
+    &--video {
+      margin-bottom: 16px;
+    }
+  }
+
+  .icon__main-form {
+    right: 10px;
+  }
 }

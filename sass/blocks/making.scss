@@ -26,20 +26,6 @@
   cursor: pointer;
 }
 
-.making__icon {
-
-  &--video {
-    margin-right: 18px;
-  }
-
-  &--play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
 .making__descript {
   padding: 0 34px;
   padding-top: 25px;
@@ -67,15 +53,6 @@
 
     span {
       width: auto;
-    }
-  }
-
-  .making__icon {
-
-    &--video {
-      margin-top: -8px;
-      margin-right: 26px;
-      vertical-align: middle;
     }
   }
 
@@ -114,13 +91,6 @@
 
   .making__video {
     flex-shrink: 0;
-  }
-
-  .making__icon {
-
-    &--video {
-      margin-bottom: 16px;
-    }
   }
 
   .making__descript {

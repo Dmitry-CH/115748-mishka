@@ -23,12 +23,12 @@
 }
 
 .main-nav__item {
-  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
 .main-nav__link {
   @include container;
+  position: relative;
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -39,13 +39,6 @@
   &[href]:hover {
     background-color: #fdd;
   }
-}
-
-.main-nav__icon {
-  position: absolute;
-  top: 30px;
-  left: 20px;
-  fill: #d2d2d2;
 }
 
 
@@ -101,16 +94,6 @@
 
     &--search {
       text-align: center;
-    }
-  }
-
-  .main-nav__icon {
-    position: static;
-    vertical-align: middle;
-
-    &--cart {
-      margin: 0 38px;
-      vertical-align: text-top;
     }
   }
 }
