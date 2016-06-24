@@ -6,12 +6,13 @@
   }
 }
 
+
 @media (min-width: $tablet) {
 
   .logo {
     z-index: 10;
     position: absolute;
-    top: 24px;
+    top: 20px;
     left: 0;
   }
 }
@@ -19,6 +20,7 @@
 @media (min-width: $desktop) {
 
   .logo {
+    top: 7px;
     left: 50%;
     transform: translateX(-50%);
   }

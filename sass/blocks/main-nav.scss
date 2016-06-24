@@ -28,10 +28,11 @@
 
 .main-nav__link {
   @include container;
+  position: relative;
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
-  padding-left: 46px;
+  padding-left: 76px;
   color: $font-basic-color;
   text-decoration: none;
 
@@ -84,19 +85,16 @@
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
     }
-
-    &:last-child {
-
-      .main-nav__link {
-        padding-left: 76px;
-      }
-    }
   }
 
   .main-nav__link {
     width: auto;
     margin: 0;
     padding: 32px 0;
+
+    &--search {
+      text-align: center;
+    }
   }
 }
 

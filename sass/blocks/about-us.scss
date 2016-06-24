@@ -1,5 +1,5 @@
 .about-us {
-  margin-top: 70px;
+  margin-top: 37px;
   margin-bottom: 24px;
 }
 
@@ -27,9 +27,6 @@
   position: absolute;
   top: 0;
   left: 0px;
-  width: 32px;
-  height: 40px;
-  background: url('../img/icon-feature-1.svg') no-repeat;
 }
 
 .about-us__text {
@@ -43,7 +40,7 @@
 @media (min-width: $tablet) {
 
   .about-us {
-    margin-top: 115px;
+    margin-top: 41px;
     margin-bottom: 22px;
   }
 
@@ -72,7 +69,7 @@
 @media (min-width: $desktop) {
 
   .about-us {
-    margin-top: 154px;
+    margin-top: 59px;
     margin-bottom: 28px;
   }
 

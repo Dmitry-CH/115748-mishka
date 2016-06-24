@@ -1,5 +1,9 @@
 .offer {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background-image: url('../img/bg-zigzag-line.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 110%;
   color: $font-second-color;
 }
 
@@ -47,11 +51,6 @@
 .offer__picture {
   margin: 0;  // Обнуляем margin figure!
   margin-bottom: 24px;
-
-  img {
-    display: block;
-    width: 100%;
-  }
 }
 
 .offer__bottom {
@@ -69,7 +68,7 @@
 @media (min-width: $tablet) {
 
   .offer {
-    margin-bottom: 68px;
+    padding-bottom: 68px;
     font-size: 16px;
     line-height: 30px;
   }
@@ -116,10 +115,6 @@
 
   .offer__picture {
     margin-bottom: 0;
-
-    img {
-      height: 404px;
-    }
   }
 
   .offer__bottom {
@@ -138,7 +133,8 @@
 @media (min-width: $desktop) {
 
   .offer {
-    margin-bottom: 96px;
+    padding-bottom: 96px;
+    background-size: auto;
   }
 
   .offer__header {
@@ -171,13 +167,6 @@
 
   .offer__picture {
     width: 60%;
-  }
-
-  .offer__picture {
-
-    img {
-      height: 636px;
-    }
   }
 
   .offer__bottom {

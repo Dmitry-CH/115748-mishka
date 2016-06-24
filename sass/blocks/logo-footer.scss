@@ -8,10 +8,10 @@
 
   .logo-footer {
     display: block;
+    line-height: 0;
 
     a {
-      display: block;
-      line-height: 0;
+      display: inline-block;
     }
   }
 }

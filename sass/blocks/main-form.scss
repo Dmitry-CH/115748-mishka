@@ -9,6 +9,7 @@
 .main-form__input-email {
   width: 100%;
   padding: 15px 0px;
+  padding-right: 44px;
   border: 0;
   border-bottom: 2px solid #000000;
   background: none;
@@ -73,6 +74,7 @@
 }
 
 .main-form__field {
+  position: relative;
   margin-bottom: 24px;
 
   &:last-child {
@@ -157,6 +159,7 @@
   .main-form__input-tel,
   .main-form__input-email {
     padding-left: 16px;
+    padding-right: 60px;
     font-size: $font-third-size;
     line-height: $line-third-height;
   }
@@ -311,6 +314,12 @@
 }
 
 @media (min-width: $desktop) {
+
+  .main-form__input-text,
+  .main-form__input-tel,
+  .main-form__input-email {
+    padding-right: 50px;
+  }
 
   .intro-text {
     padding-left: 175px;
