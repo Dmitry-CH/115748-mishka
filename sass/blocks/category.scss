@@ -24,14 +24,20 @@
   &:nth-child(even) {
     background-color: #56c3b2;
   }
+
+  &:hover {
+    transform: scaleY(1.06);
+
+    .category__link {
+      transform: translateY(-5px) scaleY(0.94);
+    }
+  }
 }
 
 .category__link {
-  @include container;
-  position: relative;
-  display: block;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  display: flex;
+  align-items: center;
+  padding: 16px calc((100% - 260px) / 2);
   color: #ffffff;
   text-decoration: none;
 
@@ -68,13 +74,19 @@
 
   .category__item {
     width: 50%;
+
+    &:hover {
+      transform: translateY(-5px);
+
+      .category__link {
+        transform: translateY(-5px);
+      }
+    }
   }
 
   .category__link {
-    width: auto;
-    padding: 30px 0;
+    padding: 30px 38px;
     padding-bottom: 50px;
-    padding-left: 36px;
   }
 }
 

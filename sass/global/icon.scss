@@ -1,5 +1,5 @@
 .icon {
-  fill: #63d1bb;
+  fill: $accent-color;
 }
 
 .icon__main-nav {
@@ -10,16 +10,10 @@
 }
 
 .icon__category {
-  position: absolute;
-  top: 50%;
-  right: 30px;
+  height: 70px;
+  margin-left: auto;
   fill: #149080;
   opacity: 0.5;
-  transform: translateY(-50%);
-
-  &--interior {
-    right: 40px;
-  }
 }
 
 .icon__about-us {
@@ -39,19 +33,40 @@
   transform: translate(-50%, -50%);
 }
 
+.icon__logo-footer {
+  fill: #000000;
+}
+
+.icon__social {
+  fill: #000000;
+}
+
+.icon__copyright {
+  margin-left: 20px;
+}
+
 .icon__catalog-item {
   fill: #d2d2d2;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .icon__making {
 
   &--video {
     margin-right: 18px;
+    vertical-align: super;
   }
 
   &--play {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -90,15 +105,6 @@
     }
   }
 
-  .icon__category {
-    top: 42%;
-    right: 35px;
-
-    &--interior {
-      right: 35px;
-    }
-  }
-
   .icon__flag {
     position: absolute;
     top: -16px;
@@ -113,6 +119,10 @@
       margin-right: 26px;
       vertical-align: middle;
     }
+
+    &--play {
+      top: 50%;
+    }
   }
 
   .icon__main-form {
@@ -121,10 +131,6 @@
 }
 
 @media (min-width: $desktop) {
-
-  .icon__category {
-    top: 46%;
-  }
 
   .icon__flag {
     top: 56px;

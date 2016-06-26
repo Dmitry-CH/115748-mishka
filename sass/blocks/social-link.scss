@@ -1,6 +1,7 @@
 .social-link {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 25px 0;
   border-bottom: 1px solid #e5e5e5;
@@ -8,24 +9,27 @@
 
 .social-link__item {
   display: inline-block;
-  width: 26px;
-  height: 35px;
-  margin: 0 15px;
+  margin-right: 40px;
   font-size: 0;
+  line-height: 0;
 
-  &--in {
-    background: url('../img/icon-insta.svg') no-repeat;
-    background-position: center;
+  &:last-child {
+    margin-right: 0;
   }
 
-  &--fb {
-    background: url('../img/icon-fb.svg') no-repeat;
-    background-position: center;
+  &:hover {
+
+    .icon__social {
+      fill: $accent-color;
+    }
   }
 
-  &--tw {
-    background: url('../img/icon-twitter.svg') no-repeat;
-    background-position: center;
+  &:active {
+
+    .icon__social {
+      fill: $accent-color;
+      opacity: 0.3;
+    }
   }
 }
 

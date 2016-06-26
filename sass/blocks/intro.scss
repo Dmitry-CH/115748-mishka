@@ -96,6 +96,17 @@
     list-style: none;
   }
 
+  .intro__link {
+
+    &[href]:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &[href]:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
   .intro__text {
     letter-spacing: 0.2px;
   }

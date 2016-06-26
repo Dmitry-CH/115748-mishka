@@ -12,12 +12,41 @@
   padding-right: 44px;
   border: 0;
   border-bottom: 2px solid #000000;
+  border-radius: 0;
   background: none;
   font-size: $font-second-size;
   line-height: $line-third-height;
   font-weight: $font-basic-weight;
   font-family: $font-second-family;
   outline: none;
+
+  &:hover {
+    border-bottom-color: $accent-color;
+
+    & + .icon__main-form {
+      fill: $accent-color;
+    }
+  }
+
+  &:focus {
+    border-bottom-color: $accent-color;
+
+    & + .icon__main-form {
+      fill: $accent-color;
+    }
+  }
+
+  &--error {
+    border-bottom-color: $error-color;
+
+    &:hover {
+      border-bottom-color: $error-color;
+    }
+
+    &:focus {
+      border-bottom-color: $error-color;
+    }
+  }
 }
 
 // Стилизация textarea
@@ -31,6 +60,26 @@
   font-weight: $font-basic-weight;
   font-family: $font-second-family;
   outline: none;
+
+  &:hover {
+    border-color: $accent-color;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  &--error {
+    border-color: $error-color;
+
+    &:hover {
+      border-color: $error-color;
+    }
+
+    &:focus {
+      border-color: $error-color;
+    }
+  }
 }
 
 // === ===
@@ -69,7 +118,7 @@
     content: "";
     display: inline-block;
     width: 100%;
-    border-bottom: 1px solid $font-accent-color;
+    border-bottom: 1px solid $accent-color;
   }
 }
 
@@ -88,6 +137,7 @@
   display: inline-block;
   padding-left: 64px;
   line-height: 40px;
+  cursor: pointer;
 
   span {
     display: inline-block;
@@ -103,7 +153,21 @@
     left: 0;
     width: 40px;
     height: 40px;
-    border: 2px solid #444444;
+    border: 2px solid $font-second-color;
+  }
+
+  &:hover {
+
+    &::before {
+      border-color: $accent-color;
+    }
+  }
+
+  &:active {
+
+    &::before {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
@@ -122,7 +186,7 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: $font-accent-color;
+  background: $accent-color;
 }
 
 .main-form__input-checkbox:checked + .main-form__label-checkbox::after {

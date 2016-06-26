@@ -1,7 +1,5 @@
 .copyright {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   padding: 24px 0;
   font-size: $font-third-size;
@@ -11,17 +9,39 @@
 }
 
 .copyright__link {
-  display: inline-block;
-  margin-left: 21px;
-  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  color: $font-basic-color;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+
+    .icon__copyright {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    .icon__copyright {
+      opacity: 0.3;
+    }
+  }
 }
 
 
 @media (min-width: $tablet) {
 
   .copyright {
-    justify-content: flex-end;
     width: 33.3334%;
     padding: 0;
+  }
+
+  .copyright__link {
+    justify-content: flex-end;
   }
 }

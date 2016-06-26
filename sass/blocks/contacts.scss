@@ -20,9 +20,18 @@
   margin-bottom: 30px;
 
   a {
-    border-bottom: 1px solid $font-accent-color;
+    border-bottom: 1px solid $accent-color;
     color: $font-second-color;
     text-decoration: none;
+
+    &:hover {
+      border-bottom-color: #46c1ae;
+      color: $font-accent-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   span {

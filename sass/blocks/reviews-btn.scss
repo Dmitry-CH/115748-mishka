@@ -13,6 +13,14 @@
   &:last-child {
     margin-left: -4px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews-btn__btn--prev {
