@@ -34,14 +34,14 @@ gulp.task('style', function() {
         'last 2 Edge versions'
       ]})
     ]))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('build/css'))
     .pipe(minify({
       restructure: false
     }))
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('build/css'))
     .pipe(server.reload({stream: true}));
 });
 
@@ -72,7 +72,7 @@ gulp.task('symbols', function() {
 
 gulp.task('serve', function() {
   server.init({
-    server: '.',
+    server: 'build',
     notify: false,
     open: true,
     ui: false
@@ -90,7 +90,6 @@ gulp.task('copy', function() {
     'fonts/**/*.{woff,woff2}',
     'img/**/*.{jpg,png,gif,svg}',
     'js/**/*.js',
-    'css/**/*.css',
     '*.html'
     ], {
       base: '.'
