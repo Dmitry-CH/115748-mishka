@@ -23,7 +23,7 @@
   &:hover {
     border-bottom-color: $accent-color;
 
-    & + .icon__main-form {
+    & ~ label .icon__main-form {
       fill: $accent-color;
     }
   }
@@ -31,7 +31,7 @@
   &:focus {
     border-bottom-color: $accent-color;
 
-    & + .icon__main-form {
+    & ~ label .icon__main-form {
       fill: $accent-color;
     }
   }
@@ -55,6 +55,7 @@
   width: 100%;
   padding: 15px 17px;
   border: 2px solid #444444;
+  border-radius: 0;
   font-size: 16px;
   line-height: 18px;
   font-weight: $font-basic-weight;

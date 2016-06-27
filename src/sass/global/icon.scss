@@ -14,6 +14,10 @@
   margin-left: auto;
   fill: #149080;
   opacity: 0.5;
+
+  &--interior {
+    margin-right: 8px;
+  }
 }
 
 .icon__about-us {
@@ -77,6 +81,7 @@
   top: 0;
   right: 5px;
   fill: #c1c1c1;
+  cursor: text;
 
   &--phone {
     top: 12px;
@@ -102,6 +107,13 @@
     &--cart {
       margin: 0 38px;
       vertical-align: text-top;
+    }
+  }
+
+  .icon__category {
+
+    &--interior {
+      margin-right: 0;
     }
   }
 

@@ -30,8 +30,8 @@
 }
 
 .catalog-item__top {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 28px;
+  padding-bottom: 16px;
 
   a {
     font-size: $font-second-size;
@@ -59,7 +59,7 @@
 .catalog-item__bottom {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 22px 0;
   border-top: 1px solid #ececec;
 
   span {
@@ -99,6 +99,7 @@
   }
 
   .catalog-item__top {
+    padding: 30px 0;
 
     a {
       font-size: $font-third-size;
@@ -110,6 +111,7 @@
   }
 
   .catalog-item__bottom {
+    padding: 26px;
     padding-right: 5px;
     margin-top: auto;
 
