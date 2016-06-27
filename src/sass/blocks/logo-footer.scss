@@ -3,11 +3,25 @@
   width: 33.3334%;
 }
 
+.logo-footer__link[href] {
+
+  &:hover {
+
+    .icon__logo-footer {
+      fill: $accent-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 
 @media (min-width: $tablet) {
 
   .logo-footer {
-    display: block;
+    display: inline-block;
     line-height: 0;
 
     a {

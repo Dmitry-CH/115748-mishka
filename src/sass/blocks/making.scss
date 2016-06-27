@@ -1,0 +1,169 @@
+.making {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    color: $font-second-color;
+  }
+
+  &:hover {
+
+    .making__descript {
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &:active {
+
+    .making__descript {
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.making__title {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 260px;
+  padding: 23px 0;
+  padding-left: 34px;
+  font-size: $font-second-size;
+  font-family: $font-second-family;
+
+  span {
+    display: inline-block;
+    width: 170px;
+  }
+}
+
+.making__video {
+  position: relative;
+  padding-top: 94px;
+  border: 1px solid #ececec;
+  border-bottom: none;
+  cursor: pointer;
+
+  &:hover {
+
+    .icon__making--play {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
+
+  &:active {
+
+    .icon__making--play {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.6;
+    }
+  }
+}
+
+.making__descript {
+  border: 1px solid #ececec;
+  border-top: none;
+  padding: 0 34px;
+  padding-top: 25px;
+}
+
+.making__text {
+  margin: 4px 0;
+}
+
+.making__btn {
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+
+@media (min-width: $tablet) {
+
+  .making__title {
+    position: static;
+    padding: 0;
+    padding-left: 40px;
+    margin: 23px 0;
+    margin-top: 38px;
+    font-size: $font-third-size;
+
+    span {
+      width: auto;
+    }
+  }
+
+  .making__video {
+    padding-top: 0;
+  }
+
+  .making__descript {
+    padding: 0 40px;
+  }
+
+  .making__text {
+    margin-top: 10px;
+    font-size: $font-second-size;
+    line-height: $line-accent-height;
+  }
+
+  .making__btn {
+    margin: 45px 0;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .making {
+    flex-direction: row;
+
+    &:hover {
+
+      .making__descript {
+        box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &:active {
+
+      .making__descript {
+        box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .making__title {
+    padding: 0;
+    margin: 0;
+
+    span {
+      display: block;
+      width: 120px;
+    }
+  }
+
+  .making__video {
+    flex-shrink: 0;
+    border: 1px solid #ececec;
+    border-right: none;
+  }
+
+  .making__descript {
+    padding-top: 55px;
+    padding-left: 78px;
+    padding-right: 50px;
+    border: 1px solid #ececec;
+    border-left: none;
+  }
+
+  .making__text {
+    margin-top: 30px;
+  }
+
+  .making__btn {
+    width: 230px;
+    margin-top: 40px;
+  }
+}

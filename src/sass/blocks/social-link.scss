@@ -1,0 +1,44 @@
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social-link__item {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 0;
+  line-height: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+
+    .icon__social {
+      fill: $accent-color;
+    }
+  }
+
+  &:active {
+
+    .icon__social {
+      fill: $accent-color;
+      opacity: 0.3;
+    }
+  }
+}
+
+
+@media (min-width: $tablet) {
+
+  .social-link {
+    width: 33.3334%;
+    padding: 0;
+    border: 0;
+  }
+}

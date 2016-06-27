@@ -37,7 +37,19 @@
   text-decoration: none;
 
   &[href]:hover {
-    background-color: #fdd;
+    color: rgba(0, 0, 0, 0.6);
+
+    .icon__main-nav {
+      fill: $accent-color;
+    }
+  }
+
+  &[href]:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    .icon__main-nav {
+      opacity: 0.3;
+    }
   }
 }
 
