@@ -21,11 +21,12 @@
 @media (min-width: $tablet) {
 
   .logo-footer {
-    display: inline-block;
+    display: block;
     line-height: 0;
 
     a {
       display: inline-block;
+      vertical-align: middle;
     }
   }
 }

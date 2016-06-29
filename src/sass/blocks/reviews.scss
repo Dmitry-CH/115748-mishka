@@ -16,6 +16,11 @@
   margin-bottom: 28px;
 }
 
+.reviews__text,
+.reviews__author-link {
+  color: $font-second-color;
+}
+
 .reviews__author {
   display: block;
   margin-top: 16px;

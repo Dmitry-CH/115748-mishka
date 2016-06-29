@@ -1,7 +1,8 @@
 .intro {
   background-color: #f1f1f1;
-  text-align: center;
+  color: #231f20;
   font-family: $font-second-family;
+  text-align: center;
 
   &--main {
 
@@ -108,6 +109,7 @@
   }
 
   .intro__text {
+    color: $font-second-color;
     letter-spacing: 0.2px;
   }
 }
@@ -141,6 +143,7 @@
 
   .intro__item {
     display: inline-block;
+    vertical-align: middle;
     margin-right: 59px;
 
     &:last-child {
