@@ -7,16 +7,10 @@
 }
 
 
-@media (min-width: $tablet) {
-
-  .page-form {
-    margin-bottom: 58px;
-  }
-}
-
 @media (min-width: $desktop) {
 
   .page-form {
     margin-top: 98px;
+    margin-bottom: 98px;
   }
 }

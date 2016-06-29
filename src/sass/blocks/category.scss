@@ -74,6 +74,7 @@
 
   .category__item {
     width: 50%;
+    transition: transform 0.2s ease;
 
     &:hover {
       transform: translateY(-5px);

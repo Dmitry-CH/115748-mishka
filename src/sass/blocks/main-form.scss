@@ -129,7 +129,6 @@
   &--checkbox {
     display: flex;
     flex-direction: column;
-
   }
 }
 
@@ -324,6 +323,7 @@
 
           .main-form__label-checkbox {
             max-width: 230px;
+            word-wrap: break-word;
           }
         }
 
