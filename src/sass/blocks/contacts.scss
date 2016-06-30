@@ -44,6 +44,7 @@
   margin-bottom: 40px;
 
   img {
+    width: 320px;
     margin: 0 auto;
   }
 }
@@ -71,6 +72,10 @@
 
   .contacts__map {
     margin-bottom: 56px;
+
+    img {
+      width: 768px;
+    }
   }
 
   .contacts__btn-wrap {
@@ -100,6 +105,10 @@
     top: 0;
     right: 0;
     margin-bottom: 0;
+
+    img {
+      width: 525px;
+    }
   }
 
   .contacts__wrapper {

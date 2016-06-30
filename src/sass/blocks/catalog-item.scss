@@ -20,6 +20,10 @@
 
 .catalog-item__picture {
   display: block;
+
+  img {
+    width: 260px;
+  }
 }
 
 .catalog-item__descript {
@@ -92,6 +96,10 @@
 
   .catalog-item__picture {
     flex-shrink: 0;
+
+    img {
+      width: 334px;
+    }
   }
 
   .catalog-item__descript {
@@ -144,6 +152,13 @@
       .catalog-item__descript {
         box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
       }
+    }
+  }
+
+  .catalog-item__picture {
+
+    img {
+      width: 316px;
     }
   }
 

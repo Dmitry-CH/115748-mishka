@@ -46,6 +46,10 @@
   border-bottom: none;
   cursor: pointer;
 
+  img {
+    width: 260px;
+  }
+
   &:hover {
 
     .icon__making--play {
@@ -96,6 +100,10 @@
 
   .making__video {
     padding-top: 0;
+
+    img {
+      width: 668px;
+    }
   }
 
   .making__descript {
@@ -148,6 +156,10 @@
     flex-shrink: 0;
     border: 1px solid #ececec;
     border-right: none;
+
+    img {
+      width: 682px;
+    }
   }
 
   .making__descript {

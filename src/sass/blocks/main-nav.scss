@@ -1,8 +1,4 @@
 .main-nav {
-  z-index: 5;
-  position: absolute;
-  top: 68px;
-  left: 0;
   width: 100%;
   background-color: #ffffff;
   font-size: $font-second-size;
@@ -57,7 +53,6 @@
 @media (min-width: $tablet) {
 
   .main-nav {
-    position: static;
     height: auto;
     overflow: visible;
     border-bottom: 1px solid #ececec;

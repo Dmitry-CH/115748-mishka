@@ -51,6 +51,10 @@
 .offer__picture {
   margin: 0;  // Обнуляем margin figure!
   margin-bottom: 24px;
+
+  img {
+    width: 260px;
+  }
 }
 
 .offer__bottom {
@@ -115,6 +119,10 @@
 
   .offer__picture {
     margin-bottom: 0;
+
+    img {
+      width: 333px;
+    }
   }
 
   .offer__bottom {
@@ -167,6 +175,10 @@
 
   .offer__picture {
     width: 60%;
+
+    img {
+      width: 525px;
+    }
   }
 
   .offer__bottom {
